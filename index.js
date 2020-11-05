@@ -125,7 +125,7 @@ function hungryDog(weight, age){
 
 
 
-/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
+/*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/   // /     ..
 
 // Rock, Paper, Scissors - Let's play against the computer!
 /*
@@ -144,8 +144,18 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
+let compChoice = Math.random();
+
 function game(user, computer){
-    /*add your code here*/
+    if((user === 'scissors' && computer === 'paper') || (user === 'paper' && computer === 'rock') 
+        (user === 'rock' && computer === 'scissors')){
+      return('you win!');
+    }else if((user === 'paper' && computer === 'scissors') || (user === 'rock' && computer === 'paper')
+        (user === 'scissors' && computer === 'rock')){
+      return('you lose!');
+    }else{
+      return('you tie!');
+    }
 }
   
   
@@ -161,8 +171,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
+function miles(km){
+    let mi = km*0.621371;
+    return mi;
   }
 
 
@@ -175,8 +186,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(cm){
+    let ft = cm/30.48;
+    return ft;
   }
  
 
@@ -191,8 +203,10 @@ Using the annoyingSong function below do the following:
       "(number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(bottles){
+        for(let i = bottles; i > 0; i--){
+          return(`${bottles} bottles of soda on the wall, ${bottles} bottles of soda, take one down pass it around ${bottles-1} bottles of soda on the wall`);
+        }
   }
 
 
