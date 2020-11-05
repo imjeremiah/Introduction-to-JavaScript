@@ -158,14 +158,14 @@ Use the game function below to do the following:
 let compChoice = Math.random();
 
 function game(user, computer){
-    if((user === 'scissors' && computer === 'paper') || (user === 'paper' && computer === 'rock') 
+    if((user === 'scissors' && computer === 'paper') || (user === 'paper' && computer === 'rock') ||
         (user === 'rock' && computer === 'scissors')){
       return('you win!');
-    }else if((user === 'paper' && computer === 'scissors') || (user === 'rock' && computer === 'paper')
+    }else if((user === 'paper' && computer === 'scissors') || (user === 'rock' && computer === 'paper') ||
         (user === 'scissors' && computer === 'rock')){
       return('you lose!');
     }else{
-      return('you tie!');
+      return('it\'s a tie');
     }
 }
   
