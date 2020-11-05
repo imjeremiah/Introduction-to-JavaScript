@@ -18,6 +18,9 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 18;
+Boolean(votingAge >= 18);
+
 
 
 /*
@@ -30,6 +33,11 @@ Do the following:
 
    HINT: no function required
 */
+
+let x = 1;
+let y = 2;
+
+
 
 
 
@@ -45,6 +53,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+
+let num = "1999"
+Number("1999")
 
 
 
@@ -256,8 +267,15 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(string){
+  let count = 0;
+  let vowels = ["a", "e", "i", "o", "u"];
+  for(i in string){
+    if(vowels.includes(i)){
+      count++;
+    }
+    return count;
+  }
 }
 
 
